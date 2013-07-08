@@ -25,3 +25,10 @@ git:
 openvpn:
   pkg:
     - installed
+
+/etc/motd:
+  file.managed:
+    - source: salt://etc/motd
+	- mode: 644
+	- user: root
+	- group: root
