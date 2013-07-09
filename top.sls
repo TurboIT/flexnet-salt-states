@@ -1,16 +1,15 @@
 base:
   '*':
     - standard 
-
-  'network:control'
+  'network:control':
     - match: grain
     - env-control
-  'network:core'
+  'network:core':
     - match: grain
     - env-core
-  'network:edge'
+  'network:edge':
     - match: grain
     - env-edge
-  'network:mgmt'
+  'network:mgmt':
     - match: grain
     - env-mgmt
