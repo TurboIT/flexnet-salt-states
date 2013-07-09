@@ -28,7 +28,7 @@ openvpn:
 
 /etc/motd:
   file.managed:
-    - source: salt://etc/motd
+    - source: salt://standard/motd
     - mode: 644
     - user: root
     - group: root
