@@ -1,6 +1,16 @@
 base:
   '*':
-    - core
-  'role:master':
+    - standard 
+
+  'network:control'
     - match: grain
-    - master
+	- env-control
+  'network:core'
+    - match: grain
+	- env-core
+  'network:edge'
+    - match: grain
+	- env-edge
+  'network:mgmt'
+    - match: grain
+	- env-mgmt
