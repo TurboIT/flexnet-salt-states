@@ -4,13 +4,13 @@ base:
 
   'network:control'
     - match: grain
-	- env-control
+    - env-control
   'network:core'
     - match: grain
-	- env-core
+    - env-core
   'network:edge'
     - match: grain
-	- env-edge
+    - env-edge
   'network:mgmt'
     - match: grain
-	- env-mgmt
+    - env-mgmt
