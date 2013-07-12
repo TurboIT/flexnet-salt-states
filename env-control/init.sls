@@ -3,8 +3,7 @@
 
 timoguin:
   user.present:
-    - fullname: "Tim O'Guin"
-    - shell: /bin/zsh
+    - shell: /bin/bash
     - home: /home/timoguin
     - createhome: true
     - uid: 1000
