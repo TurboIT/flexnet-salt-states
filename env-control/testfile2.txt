@@ -1,3 +1,0 @@
-This is a new test file. Gettin' real.
-
-Maybe throw an edit in here to see if highstate grabs it.
