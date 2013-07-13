@@ -12,3 +12,12 @@ timoguin:
     - groups:
       - sudo 
     - password: none  
+
+wrench:
+  user.present:
+    - shell: /bin/bash
+    - home: /home/wrench
+    - createhome: true
+    - groups:
+      - sudo 
+    - password: none  
