@@ -7,8 +7,6 @@ timoguin:
     - shell: /bin/zsh
     - home: /home/timoguin
     - createhome: true
-    - uid: 1000
-    - gid: 1000
     - groups:
       - sudo 
     - password: none  
