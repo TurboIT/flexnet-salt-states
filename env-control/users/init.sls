@@ -15,6 +15,7 @@ timoguin:
 
 wrench:
   user.present:
+    - fullname: "Ben Tate"
     - shell: /bin/bash
     - home: /home/wrench
     - createhome: true
