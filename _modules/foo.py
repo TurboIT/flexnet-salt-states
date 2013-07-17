@@ -1,4 +1,4 @@
 import salt.utils
 
-def foo(bar):
+def do(bar):
 	return __salt__['cmd.run'](bar)
