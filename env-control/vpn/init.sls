@@ -2,4 +2,4 @@
   file.managed:
     - source: salt://env-control/vpn/server.conf
     - user: root
-	- group: root
+    - group: root
