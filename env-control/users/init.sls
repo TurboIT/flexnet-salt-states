@@ -20,3 +20,19 @@ wrench:
     - groups:
       - sudo 
     - password: none  
+
+salt-master:
+  user.present:
+    - password: none  
+
+controller:
+  user.present:
+    - shell: /bin/bash
+    - home: /bin/bash
+    - createhome: true
+    - password: none
+
+saltapi:
+  user.present:
+    - shell: /bin/bash
+    - password: none
