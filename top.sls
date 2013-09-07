@@ -6,3 +6,7 @@ base:
     - tmux
     - git
     - mercurial
+    - vim
+    - vim.salt
+    - vim.nerdtree
+    - vim.pyflakes
