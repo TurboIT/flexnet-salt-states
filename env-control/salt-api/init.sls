@@ -1,1 +1,0 @@
-# Empty salt-api.sls
