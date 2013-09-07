@@ -4,3 +4,5 @@ base:
     - users
     - build-essential
     - tmux
+    - git
+    - mercurial
