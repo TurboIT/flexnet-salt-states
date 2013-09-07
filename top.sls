@@ -10,4 +10,4 @@ base:
     - vim.salt
     - vim.nerdtree
     - vim.pyflakes
-	- salt.master
+    - salt.master
