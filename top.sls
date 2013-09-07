@@ -12,3 +12,5 @@ base:
     - vim.pyflakes
     - salt.master
     - salt.minion
+    - ssh.server
+    - ssh.client
