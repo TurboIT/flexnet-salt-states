@@ -42,7 +42,7 @@ include:
         - {{ group }}
       {% endfor %}
     - require:
-        - group: {{ name }}
+      - group: {{ name }}
       {% for group in user.get('groups', []) %}
       - group: {{ group }}
       {% endfor %}
