@@ -11,3 +11,4 @@ base:
     - vim.nerdtree
     - vim.pyflakes
     - salt.master
+    - salt.minion
