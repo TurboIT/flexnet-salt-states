@@ -1,4 +1,3 @@
 base:
   '*':
-    - standard 
-    - env-control
+    - users
