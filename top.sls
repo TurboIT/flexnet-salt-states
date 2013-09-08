@@ -12,5 +12,7 @@ base:
     - vim.pyflakes
     - salt.master
     - salt.minion
-    - ssh.server
-    - ssh.client
+    # Disabling SSH states until 0.17 is installed,
+    # due to incompatibilties with the formula.
+    # - ssh.server
+    # - ssh.client
