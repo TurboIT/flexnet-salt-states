@@ -17,6 +17,4 @@ base:
     # - ssh.server
     # - ssh.client
   'web*.flexdeaf.dev':
-    - apache
-    - apache.mod_wsgi
-    - apache.vhosts.standard
+    - apache.debian_full
