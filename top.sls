@@ -16,3 +16,5 @@ base:
     # due to incompatibilties with the formula.
     # - ssh.server
     # - ssh.client
+  'web*.flexdeaf.dev':
+    - apache
