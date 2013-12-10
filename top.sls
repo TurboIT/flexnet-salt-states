@@ -19,3 +19,4 @@ base:
   'web*.flexdeaf.dev':
     - apache
     - apache.mod_wsgi
+    - apache.vhosts.standard
