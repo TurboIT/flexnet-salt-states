@@ -18,3 +18,4 @@ base:
     # - ssh.client
   'web*.flexdeaf.dev':
     - apache
+    - apache.mod_wsgi
