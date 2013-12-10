@@ -17,4 +17,4 @@ base:
     # - ssh.server
     # - ssh.client
   'web*.flexdeaf.dev':
-    - apache.vhosts.standard
+    - apache
