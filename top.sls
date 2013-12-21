@@ -20,3 +20,5 @@ base:
     - apache
     - apache.mod_wsgi
     - apache.vhosts.standard
+  'db*.flexdeaf.dev':
+    - postgres
