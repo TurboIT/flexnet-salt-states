@@ -8,6 +8,6 @@ postgresql:
     {% endif %}
 
 {% for database in pillar['postgres']['databases'] %}
-{{ database }}
+{{ database }}:
   postgres_database.present
 {% endfor %}
