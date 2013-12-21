@@ -19,6 +19,5 @@ postgresql:
     - createuser: True
     - encrypted: True
     - superuser: True
-    - password: {{ pillar['postgres']['default_password'] }} 
-    - runas: {{ user }}
+    - password: {{ salt['pillar.get']('postgres:default_password', 'defaultpassdintwerk') }} 
 {% endfor %} 
