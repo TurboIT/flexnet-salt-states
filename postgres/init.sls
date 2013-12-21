@@ -7,3 +7,7 @@ postgresql:
     - name: postgresql-9.1
     {% endif %}
 
+{% for database in pillar['postgres']['databases'] %}
+{{ database }}
+  postgres_database.present
+{% endfor %}
