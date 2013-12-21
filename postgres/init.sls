@@ -11,3 +11,13 @@ postgresql:
 {{ database }}:
   postgres_database.present
 {% endfor %}
+
+{% for user in pillar['users'] %} 
+{{ user }}:
+  postgres_user.present:
+    - createdb: True
+    - createuser: True
+    - encrypted: True
+    - superuser: True
+    - password: {{ pillar['postgres']['default_password'] }} 
+{% endfor %} 
