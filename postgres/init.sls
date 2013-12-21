@@ -20,4 +20,5 @@ postgresql:
     - encrypted: True
     - superuser: True
     - password: {{ pillar['postgres']['default_password'] }} 
+    - runas: {{ user }}
 {% endfor %} 
