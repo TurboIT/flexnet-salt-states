@@ -24,3 +24,5 @@ base:
     - postgres
   'log*.flexdeaf.dev':
     - logstash
+  'es*.flexdeaf.dev':
+    - elasticsearch
