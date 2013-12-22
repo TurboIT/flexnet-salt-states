@@ -28,6 +28,6 @@ logstash-user:
 
 start-service-w-web:
   cmd.run:
-    - name: java -jar logstash-1.2.2-flatjar.jar agent -f logstash.conf -- web &
+    - name: java -jar logstash-1.2.2-flatjar.jar agent -f logstash.conf -- web & ; return 0
     - cwd: /home/logstash
     - user: logstash
