@@ -16,7 +16,6 @@ base:
     # due to incompatibilties with the formula.
     # - ssh.server
     # - ssh.client
-dev:
   'web*.flexdeaf.dev':
     - apache
     - apache.mod_wsgi
