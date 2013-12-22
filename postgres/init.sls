@@ -21,3 +21,6 @@ postgresql:
     - superuser: True
     - password: {{ salt['pillar.get']('postgres:default_password', 'defaultpassdintwerk') }} 
 {% endfor %} 
+
+postgresql-client-common:
+  pkg.installed
