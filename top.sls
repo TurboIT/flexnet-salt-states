@@ -22,3 +22,5 @@ base:
     - apache.vhosts.standard
   'db*.flexdeaf.dev':
     - postgres
+  'log*.flexdeaf.dev':
+    - logstash
