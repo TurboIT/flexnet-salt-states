@@ -10,7 +10,7 @@ salt-cloud:
     - context:
         minion_info: {{ salt['pillar.get']('salt:minion', 'master: localhost') }}
 
-{% for provider in salt['pillar.get']('salt:cloud:providers') %}
+{% for provider in salt['pillar.get']('salt:cloud:providers').items() %}
 /etc/salt/cloud.providers.d/{{ provider }}.conf:
   file.managed:
     - user: {{ salt['pillar.get']('salt:master:user', 'salt') }}
