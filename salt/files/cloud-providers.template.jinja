@@ -1,1 +1,5 @@
-{{ provider }}
+{{ provider }}:
+{% for key, value in provider.items() %}
+  {{ key }}: {{ value }}
+{% endfor %}
+{% endfor %}

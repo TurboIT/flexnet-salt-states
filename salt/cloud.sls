@@ -20,3 +20,12 @@ salt-cloud:
     - context:
       provider: {{ provider }}
 {% endfor %}
+
+/etc/salt/cloud.maps.d:
+  file.directory:
+    - user: {{ salt['pillar.get']('salt:master:user', 'salt') }}
+    - group: {{ salt['pillar.get']('salt:master:user', 'salt') }}
+    - mode: 775
+    - makedirs: True
+
+{% for cloud_map in salt['pillar.get']('salt:cloud:map
