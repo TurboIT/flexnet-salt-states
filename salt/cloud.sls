@@ -18,7 +18,7 @@ salt-cloud:
     - source: salt://salt/files/cloud-providers.template.jinja
     - template: jinja
     - context:
-      provider: {{ provider }}
+      provider: {{ provider.get() }}
 {% endfor %}
 
 /etc/salt/cloud.maps.d:
