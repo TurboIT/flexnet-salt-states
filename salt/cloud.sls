@@ -10,15 +10,15 @@ salt-cloud:
     - context:
       minion_info: {{ salt['pillar.get']('salt:minion', 'master: localhost') }}
 
-{% for provider in salt['pillar.get']('salt:cloud:providers').iteritems() %}
+{% for provider in salt['pillar.get']('salt:cloud:providers').items() %}
 /etc/salt/cloud.providers.d/{{ provider }}.conf:
   file.managed:
     - user: {{ salt['pillar.get']('salt:master:user', 'salt') }}
     - group: {{ salt['pillar.get']('salt:master:user', 'salt') }}
-{% for provider_sub in provider.items() %}
-  file.append:
-    - text: {{ provider_sub }}
-{% endfor %}
+    - source: salt://salt/files/cloud-providers.template.jinja
+    - template: jinja
+    - context:
+      provider: {{ provider }}
 {% endfor %}
 
 /etc/salt/cloud.maps.d:
