@@ -7,6 +7,8 @@ salt-master:
     - name: /etc/salt/master
     - template: jinja
     - source: salt://salt/files/master
+    - user: salt
+    - group: salt
   service.running:
     - enable: True
     - watch:

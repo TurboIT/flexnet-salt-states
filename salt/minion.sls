@@ -7,6 +7,8 @@ salt-minion:
     - name: /etc/salt/minion
     - template: jinja
     - source: salt://salt/files/minion
+    - user: salt
+    - group: salt
   service.running:
     - enable: True
     - watch:
