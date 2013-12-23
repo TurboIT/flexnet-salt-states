@@ -1,4 +1,4 @@
 {{ provider }}:
-{% for key, value in provider.items() %}
+{% for key, value in salt['pillar.get']('salt:cloud:providers:{{ provider }}'.items() %}
   {{ key }}: {{ value }}
 {% endfor %}
