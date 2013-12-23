@@ -2,9 +2,11 @@ salt-cloud:
   pkg.installed
 
 /etc/salt/cloud:
-  file.append:
-    - text:
-      - {{ salt['pillar.get']('salt:minion', 'master: localhost') }}
+  file.managed:
+    - source: salt://salt/files/cloud.template.jinja
+    - template: jinja
+    - context:
+      minion_info: {{ salt['pillar.get']('salt:minion', 'master: localhost') }}
 
 {% for provider in salt['pillar.get']('salt:cloud:providers') %}
 /etc/salt/cloud.providers.d/{{ provider }}.conf:
