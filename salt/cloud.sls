@@ -4,7 +4,7 @@ salt-cloud:
 /etc/salt/cloud:
   file.append:
     - text:
-      - {{ salt['pillar.get']('salt:minion'), 'master: localhost') }}
+      - {{ salt['pillar.get']('salt:minion', 'master: localhost') }}
 
 {% for provider in salt['pillar.get']('salt:cloud:providers') %}
 /etc/salt/cloud.providers.d/{{ provider }}.conf:
