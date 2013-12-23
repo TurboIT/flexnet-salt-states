@@ -11,16 +11,10 @@ es-user:
     - groups:
       - es 
 
-/home/es/elasticsearch-0.90.8.tar.gz:
+/home/es/elasticsearch-0.90.8.deb:
   file.managed:
-    - source: https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.8.tar.gz
-    - source_hash: md5=f188f8f3b8d0c4b6185134c99905adc9
+    - source: https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.8.deb
+    - source_hash: md5=94230008c6670f5b36e934b213a769cf
     - user: es
     - group: es
     - mode: 644
-
-unzip-es-archive:
-  cmd.run:
-    - name: tar -xvzpf elasticsearch-0.90.8.tar.gz
-    - cwd: /home/es
-    - user: es
