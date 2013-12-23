@@ -27,5 +27,3 @@ salt-cloud:
     - group: {{ salt['pillar.get']('salt:master:user', 'salt') }}
     - mode: 775
     - makedirs: True
-
-{% for cloud_map in salt['pillar.get']('salt:cloud:map
