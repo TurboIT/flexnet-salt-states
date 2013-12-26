@@ -11,12 +11,10 @@ base:
     - vim.nerdtree
     - vim.pyflakes
     - salt.minion
-    # Disabling SSH states until 0.17 is installed,
-    # due to incompatibilties with the formula.
-    # - ssh.server
-    # - ssh.client
+    - python-development
   'master*.flexdeaf.dev':
     - salt.master
+    - salt.cloud
   'web*.flexdeaf.dev':
     - apache
     - apache.mod_wsgi
