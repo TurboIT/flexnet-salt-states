@@ -1,1 +1,5 @@
-{{ pillar.item['saltminion'] }}
+PILLAR.GET
+    {{ pillar.get('saltminion') }}
+    
+PILLAR.ITEM
+    {{ pillar.item('saltminion') }}
