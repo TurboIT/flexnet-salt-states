@@ -10,11 +10,9 @@ base:
     - vim.salt
     - vim.nerdtree
     - vim.pyflakes
-    - salt.minion
     - python-development
   'master*.flexdeaf.dev':
     - salt.master
-    - salt.cloud
   'web*.flexdeaf.dev':
     - apache
     - apache.mod_wsgi
