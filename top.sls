@@ -20,7 +20,7 @@ base:
     - apache.vhosts.standard
   'db*.flexdeaf.dev':
     - postgres
-  'log*.flexdeaf.dev':
+  'log*.*.dev':
     - logstash
   'es*.flexdeaf.dev':
     - elasticsearch
