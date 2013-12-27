@@ -1,7 +1,7 @@
 python-dev:
   pkg.installed
 
-pip:
+python-pip:
   pkg.installed
 
 virtualenv:
