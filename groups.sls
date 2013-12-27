@@ -1,6 +1,5 @@
 {% for group in pillar.get('groups', []) %}
-{{ group }}_group:
+{{ group }}:
   group:
-    - name: {{ group }}
     - present
 {% endfor %}
