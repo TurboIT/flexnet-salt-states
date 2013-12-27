@@ -7,13 +7,6 @@ include:
 {% endif %}
 {% set home = user.get('home', "/home/%s" % name) %}
 
-{% for group in user.get('groups', []) %}
-{{ group }}_group:
-  group:
-    - name: {{ group }}
-    - present
-{% endfor %}
-
 {{ name }}_user:
   file.directory:
     - name: {{ home }}

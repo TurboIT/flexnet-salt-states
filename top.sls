@@ -1,6 +1,7 @@
 base:
   '*':
     - hosts
+    - groups
     - users
     - build-essential
     - tmux
