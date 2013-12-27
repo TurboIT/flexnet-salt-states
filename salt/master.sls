@@ -9,6 +9,7 @@ salt-master:
     - source: salt://salt/files/master
     - user: salt
     - group: salt
+    - mode: 660
   service.running:
     - enable: True
     - watch:
