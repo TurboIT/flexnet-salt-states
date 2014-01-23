@@ -11,6 +11,7 @@ include:
     - name: {{ apache.vhostdir }}/{{ id }}
     - source: {{ site.get('template_file', 'salt://apache/vhosts/standard.tmpl') }}
     - template: {{ site.get('template_engine', 'jinja') }}
+    - backup: minion
     - context:
         id: {{ id|json }}
         site: {{ site|json }}
