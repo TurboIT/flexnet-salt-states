@@ -1,3 +1,6 @@
+include:
+  - java
+
 elasticsearch-installer:
   file.managed:
     - name: /home/vagrant/elasticsearch-0.90.10.deb
@@ -32,6 +35,6 @@ elasticsearch-service:
     # automatically when the config directory
     # gets touched.
 
-    # - reload: True
-    # - watch:
-    #   - file: elasticsearch-configs
+    - reload: True
+    - watch:
+        - file: elasticsearch-configs
