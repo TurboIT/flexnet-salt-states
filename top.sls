@@ -24,3 +24,5 @@ base:
     - logstash
   'es*.flexdeaf.dev':
     - elasticsearch
+  'redis*.flexdeaf.dev':
+    - redis
